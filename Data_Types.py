@@ -1,9 +1,11 @@
-# python Shell - an interactive interpreter that can be accessed from the cli
-# data types - a specific kind of data
-#exception - a predictable error that can be handled without making a program to crash
-#codeblock-  a group of code that can be interpreted together
-#function - a named codeblock that performs a series of actions when called
-#scope - an area in your program where a specific variable can be called
+'''
+python Shell - an interactive interpreter that can be accessed from the cli
+data types - a specific kind of data
+exception - a predictable error that can be handled without making a program to crash
+codeblock-  a group of code that can be interpreted together
+function - a named codeblock that performs a series of actions when called
+scope - an area in your program where a specific variable can be called
+'''
 
                           #DATA TYPES
                                                             #1. strings
@@ -45,7 +47,9 @@ print(f"Item 2 costs ${price_2:.2f}")
 type("hello")
 # => <class 'str'>             
 
-#Using the dir() function on any Python object will display a list of all the methods that object responds to (you'll see upper, lower, capitalize and more in that list):
+'''
+Using the dir() function on any Python object will display a list of all the methods that object responds to (you'll see upper, lower, capitalize and more in that list):
+'''
 
 dir("hello")
 # => ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', ... ]
@@ -66,7 +70,9 @@ float("1.1")
 
 
                     #SEQUENCE TYPES
-# Python has a number of different data types that are useful for storing data. Each of these types can store any type of data inside; what differs between them are the rules for organizing and accessing the data.
+'''
+Python has a number of different data types that are useful for storing data. Each of these types can store any type of data inside; what differs between them are the rules for organizing and accessing the data.
+'''
 
                                                                   #1 LISTS
 # Any set of comma separated data enclosed in brackets is a list. 
@@ -106,9 +112,10 @@ print(list_123)
 
 
                                                                   #2 TUPLES
-#Tuples are nearly identical to lists, with two key differences:
+'''Tuples are nearly identical to lists, with two key differences:
 
-#First, tuples are created with open and close parentheses (in place of square brackets). The tuple() class constructor function can also be used to cast lists and other iterable data types to tuples.
+first, tuples are created with open and close parentheses (in place of square brackets). The tuple() class constructor function can also be used to cast lists and other iterable data types to tuples.
+'''
 (1, 2, 3)
 # => (1, 2, 3)
 tuple([1, 2, 3])
@@ -120,7 +127,9 @@ tuple([1, 2, 3])
                                                             #3 SETS AND DICTS
 
 #SETS
-#A set is unindexed, unordered, and unchangeable. It can be initiated with curly brackets or the set() class constructor. The set() class constructor takes a list or tuple as its only argument (remember those brackets and parentheses!) The elements of a set are unique:
+'''
+A set is unindexed, unordered, and unchangeable. It can be initiated with curly brackets or the set() class constructor. The set() class constructor takes a list or tuple as its only argument (remember those brackets and parentheses!) The elements of a set are unique:
+'''
 set()
 # => {}
 
@@ -130,7 +139,9 @@ set(3, 2, 3, 'a', 'b', 'a')
 set([3, 2, 3, 'a', 'b', 'a'])
 # => {2, 3, 'a', 'b'}
 
-#NOTE: Immutable and unchangeable mean different things when we're talking about data types in Python. A set is immutable because its overall structure cannot be changed; it can't be made shorter or longer. It is unchangeable because an element cannot be changed into something else.
+'''
+NOTE: Immutable and unchangeable mean different things when we're talking about data types in Python. A set is immutable because its overall structure cannot be changed; it can't be made shorter or longer. It is unchangeable because an element cannot be changed into something else.
+'''
 
 s = {1, 2, 3}
 s.pop()
@@ -159,10 +170,12 @@ dict(x = 1, y = 2)
 # => {'x': 1, 'y': 2}
 
                                                                     #4 NONE
-# In Python, there is one special value that represents the absence of a value, None.
-# Unlike JavaScript, Python won't let you create a variable without assigning a value. You must explicitly assign a value of None if you want an "empty" variable:
+'''
+In Python, there is one special value that represents the absence of a value, None.
+Unlike JavaScript, Python won't let you create a variable without assigning a value. You must explicitly assign a value of None if you want an "empty" variable:
+'''
 
-no_value
+
 # => NameError: name 'no_value' is not defined
 
 no_value = None
@@ -176,7 +189,8 @@ type(True)
 type(False)
 # => <class 'bool'>
 
-# Python, like JavaScript, has the concept of "truthy" and "falsy" values as well: values which, when coerced to their equivalent boolean value, or evaluated as part of a conditional statement, return either True or False:
+'''Python, like JavaScript, has the concept of "truthy" and "falsy" values as well: values which, when coerced to their equivalent boolean value, or evaluated as part of a conditional statement, return either True or False:
+'''
 
 not True
 # => False
@@ -197,4 +211,6 @@ not ()
 not {}
 # => True
 
-#NOTE: not is the operator that reverses the truth value of a value, variable, or statement. ! still plays a role in Python, but it is only used in the != operator that asserts that two values are not equal.
+'''
+NOTE: not is the operator that reverses the truth value of a value, variable, or statement. ! still plays a role in Python, but it is only used in the != operator that asserts that two values are not equal.
+'''
