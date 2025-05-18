@@ -156,5 +156,5 @@ admin1 = Admin("Alice", "alice@example.com", admin_level=5)
 customer1 = Customer("Bob", "bob@example.com", customer_id=12345)
 
 print(customer1.login()) 
-print(customer1.make_purchase("Laptop"))
+
 
